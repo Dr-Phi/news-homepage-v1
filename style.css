@@ -114,3 +114,12 @@ h6 {
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+#top {
+  border: 1px solid red;
+}
+#mid {
+  border: 1px solid green;
+}
+#bottom{
+  border: 1px solid blue;
+}
