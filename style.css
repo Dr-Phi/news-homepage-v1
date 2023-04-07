@@ -114,7 +114,7 @@ h6 {
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-#top {
+header {
   border: 1px solid red;
 }
 #mid {
@@ -122,4 +122,123 @@ h6 {
 }
 #bottom{
   border: 1px solid blue;
+}
+aside {
+  border: 1px solid goldenrod;
+}
+.news{
+  border: 1px solid orangered;
+}
+nav {
+  border: 1px solid purple;
+}
+
+/* My Styles */
+
+body{
+  padding: 1rem;
+  font-family: Inter, sans-serif ;
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+}
+
+.text-black {
+  color: hsl(240, 100%, 5%);
+}
+.text-white {
+  color: white;
+}
+aside {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1rem;
+}
+aside > p {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+h3 {
+  padding-top: 1.3rem;
+}
+h3 + p {
+  color: hsl(233, 8%, 79%);
+  padding-top: .2rem;
+  padding-bottom: .4rem;
+}
+h3 + p:not(#last-p) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+}
+
+main{
+  margin-bottom: 16%;
+}
+
+h1 {
+  margin-top: 7%;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+h1 + p {
+  margin-bottom: 7%;
+}
+
+button.text-white {
+  background-color: hsl(5, 85%, 63%);
+  border: unset;
+  font-size: 17px;
+  font-weight: 500;
+  padding: .7rem 1.7rem;
+  letter-spacing: 4px;
+}
+button.text-white:hover {
+  cursor: pointer;
+}
+
+#bottom {
+  margin: 4rem 0;
+}
+
+.news {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.news > div {
+  flex: 2 1 auto;
+  margin-left: 1.3rem;
+}
+
+.news > img {
+  width: 7em;
+  flex: 1 1 auto;
+
+}
+
+.news > div > div {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(233, 8%, 79%);
+}
+.news>div> h4 {
+  font-size: 17px;
+  margin-bottom: .3rem;
+}
+
+
+@media(max-width: 600px){
+
+
 }
