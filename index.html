@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  
+
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
 
 
-    <header>
-      <img src="./assets/images/logo.svg" alt="logo letter W">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">New</a>
-        <a href="#">Popular</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
-      </nav>
-    </header>
+  <header>
+    <img src="./assets/images/logo.svg" alt="logo letter W">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
+    </nav>
+  </header>
 
 
 
   <div id="mid">
     <main>
-      
+
       <picture>
         <source media="(min-width: 600px)" srcset="./assets/images/image-web-3-desktop.jpg">
         <source media="(min-width: 360px)" srcset="./assets/images/image-web-3-mobile.jpg">
@@ -43,10 +52,13 @@
 
       <article>
         <h1 class="text-black">The Bright Future of Web 3.0?</h1>
-        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
-        people.
-        But is it really fulfilling its promise?</p>
-        <button class="text-white">READ MORE</button>
+        <div class="sub">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+            hands of the
+            people.
+            But is it really fulfilling its promise?</p>
+          <button class="text-white">READ MORE</button>
+        </div>
       </article>
 
     </main>
@@ -72,7 +84,7 @@
   </div>
 
 
-  <div id ="bottom">
+  <div id="bottom">
 
     <div class="news">
       <img src="./assets/images/image-retro-pcs.jpg" alt="keyboard">
@@ -102,10 +114,11 @@
     </div>
 
   </div>
-  
-  
+
+
   <div class="attribution">
     Coded by <a href="https://github.com/Dr-Phi">Dr-Phi</a>.
   </div>
 </body>
+
 </html>

@@ -114,30 +114,11 @@ h6 {
   /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-header {
-  border: 1px solid red;
-}
-#mid {
-  border: 1px solid green;
-}
-#bottom{
-  border: 1px solid blue;
-}
-aside {
-  border: 1px solid goldenrod;
-}
-.news{
-  border: 1px solid orangered;
-}
-nav {
-  border: 1px solid purple;
-}
-
 /* My Styles */
 
-body{
+body {
   padding: 1rem;
-  font-family: Inter, sans-serif ;
+  font-family: Inter, sans-serif;
   color: hsl(236, 13%, 42%);
   font-size: 15px;
 }
@@ -145,53 +126,55 @@ body{
 .text-black {
   color: hsl(240, 100%, 5%);
 }
+
 .text-white {
   color: white;
 }
+
 aside {
   background-color: hsl(240, 100%, 5%);
   padding: 1rem;
 }
-aside > p {
+
+aside>p {
   color: hsl(35, 77%, 62%);
   font-weight: 700;
   font-size: 1.5rem;
 }
+
 h3 {
   padding-top: 1.3rem;
 }
-h3 + p {
+
+h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+h3+p {
   color: hsl(233, 8%, 79%);
   padding-top: .2rem;
   padding-bottom: .4rem;
 }
-h3 + p:not(#last-p) {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid hsl(236, 13%, 42%);
+
+h3+p:not(#last-p) {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(236, 13%, 42%);
 }
-header{
+
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
+
 header a {
   text-decoration: none;
 }
 
-main{
+main {
   margin-bottom: 16%;
-}
-
-h1 {
-  margin-top: 7%;
-  margin-bottom: 5%;
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 100%;
-}
-
-h1 + p {
-  margin-bottom: 7%;
 }
 
 button.text-white {
@@ -202,8 +185,23 @@ button.text-white {
   padding: .7rem 1.7rem;
   letter-spacing: 4px;
 }
+
+h1 {
+  margin-top: 7%;
+  margin-bottom: 5%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+h1+p {
+  margin-bottom: 7%;
+}
+
+
 button.text-white:hover {
   cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
 }
 
 #bottom {
@@ -216,29 +214,141 @@ button.text-white:hover {
   margin-bottom: 2rem;
 }
 
-.news > div {
+.news>div {
   flex: 2 1 auto;
   margin-left: 1.3rem;
 }
 
-.news > img {
+.news>img {
   width: 7em;
   flex: 1 1 auto;
 
 }
 
-.news > div > div {
+.news>div>div {
   font-size: 1.8rem;
   font-weight: 700;
   color: hsl(233, 8%, 79%);
 }
-.news>div> h4 {
+
+.news>div>h4 {
   font-size: 17px;
   margin-bottom: .3rem;
 }
+.news>div>h4:hover{
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
 
 
-@media(max-width: 600px){
+@media (min-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
 
+  nav>a {
+    color: inherit;
+    padding: 0 1em;
+    font-size: 19px;
+  }
 
+  nav>a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+
+  nav>a:visited {
+    text-decoration: inherit;
+  }
+
+  #mid {
+    margin-top: 3.5%;
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+  }
+
+  h1.text-black {
+    margin: 1.5rem 0;
+    min-width: 23rem;
+    line-height: 3rem;
+  }
+    button.text-white {
+      margin-top: 1.3em;
+      padding: .5rem 1.4rem;
+      letter-spacing: 4px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 2.5% 10%;
+    font-size: 15px;
+  }
+
+  main>picture {
+    max-width: 96%;
+  }
+
+  #mid {
+    display: flex;
+  }
+
+  article {
+    margin-top: 3%;
+    max-width: 93%;
+  }
+
+  h1.text-black {
+    line-height: 2.9rem;
+    font-size: 6vmin;
+    min-width: 15rem;
+    margin: 0;
+    margin-right: 1.4em;
+  }
+
+  aside {
+    min-width: 29%;
+    margin-right: 1rem;
+  }
+
+  aside>p {
+    font-size: 1.3rem;
+  }
+
+  aside p:first-child {
+    font-size: 2rem;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+
+  button.text-white {
+    margin-top: 1.3em;
+    padding: .5rem 1.4rem;
+    letter-spacing: 4px;
+  }
+
+  #bottom {
+    display: flex;
+    margin: 3rem 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .news {
+    max-width: 31%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 17px;
+  }
+
+  h1.text-black {
+    font-size: 5vmin;
+  }
 }
