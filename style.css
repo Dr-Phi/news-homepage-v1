@@ -235,11 +235,86 @@ button.text-white:hover {
   font-size: 17px;
   margin-bottom: .3rem;
 }
-.news>div>h4:hover{
+
+.news>div>h4:hover {
   color: hsl(5, 85%, 63%);
   cursor: pointer;
 }
 
+@media (min-width: 319px) {
+  nav>a {
+    padding: 1em 2em;
+    padding-right: 29vw;
+    display: block;
+    color: black;
+    text-align: start;
+    font-weight: 500;
+    font-size: 17px;
+  }
+    nav>a:first-child {
+      margin-top: 7rem;
+    }
+    nav>a:hover {
+      color: azure;
+      background-color: tomato;
+    }
+  .icon-menu {
+    position: relative;
+    z-index: 10;
+  }
+
+  .icon-menu>img {
+    vertical-align: top;
+    cursor: pointer;
+  }
+
+  .icon-menu+nav {
+    background-color: rgb(251, 251, 251);
+    box-shadow: 1px 2px 15px 2px rgb(214, 212, 212);
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .5s ease;
+    height: 100vh;
+  }
+  .active {
+    transform: translate(16rem);
+  }
+  .opacity-bg{
+    background-color: rgba(1, 1, 1, 0.5);
+    transition: all 0.4 ease;
+  }
+    #mid {
+      margin-top: 3.5%;
+    }
+}
+@media (min-width: 460px) {
+  .active {
+      transform: translate(20rem);
+    }
+}
+
+@media (min-width: 690px) {
+  .icon-menu {
+    display: none;
+  }
+  .icon-menu+nav {
+      all: unset !important;
+      display: flex !important;
+  }
+  header>nav>a:first-child {
+    margin-top: 0;
+  }
+  header>nav>a:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+nav>a {
+all: unset;
+  padding: 0 1.2rem !important;
+}
+}
 
 @media (min-width: 1000px) {
   body {
@@ -254,6 +329,7 @@ button.text-white:hover {
 
   nav>a:hover {
     color: hsl(5, 85%, 63%);
+    background-color: unset;
   }
 
   nav>a:visited {
@@ -274,11 +350,12 @@ button.text-white:hover {
     min-width: 23rem;
     line-height: 3rem;
   }
-    button.text-white {
-      margin-top: 1.3em;
-      padding: .5rem 1.4rem;
-      letter-spacing: 4px;
-    }
+
+  button.text-white {
+    margin-top: 1.3em;
+    padding: .5rem 1.4rem;
+    letter-spacing: 4px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
